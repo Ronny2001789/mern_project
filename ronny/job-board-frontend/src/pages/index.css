@@ -1,0 +1,155 @@
+/* Reset & Base */
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  background: #121212;
+  font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+  color: #e0e0e0;
+  padding: 20px;
+  line-height: 1.6;
+}
+
+a {
+  text-decoration: none;
+  color: #00f2ff;
+  transition: color 0.3s;
+}
+
+a:hover {
+  color: #1de9b6;
+}
+
+/* Layout */
+.container {
+  max-width: 800px;
+  margin: auto;
+  padding: 20px;
+}
+
+/* Form Styling */
+form {
+  background-color: #1f1f1f;
+  padding: 30px;
+  border-radius: 12px;
+  box-shadow: 0 4px 20px rgba(0, 255, 255, 0.05);
+  margin-top: 30px;
+  width: 100%;
+}
+
+input, textarea, select, button {
+  width: 100%;
+  margin-bottom: 20px;
+  padding: 12px 15px;
+  border: none;
+  border-radius: 8px;
+  background: #2d2d2d;
+  color: #fff;
+  font-size: 15px;
+}
+
+input::placeholder,
+textarea::placeholder {
+  color: #999;
+}
+
+input:focus,
+textarea:focus,
+select:focus {
+  outline: none;
+  border: 1px solid #00f2ff;
+  background: #1e1e1e;
+}
+
+button {
+  background: linear-gradient(135deg, #00f2ff, #1de9b6);
+  color: #000;
+  font-weight: bold;
+  cursor: pointer;
+  transition: background 0.3s ease, transform 0.2s ease;
+}
+
+button:hover {
+  background: linear-gradient(135deg, #1de9b6, #00f2ff);
+  transform: translateY(-2px);
+}
+
+/* Job Card List */
+.job-card {
+  background: #1e1e1e;
+  border-radius: 10px;
+  padding: 20px;
+  margin-bottom: 20px;
+  box-shadow: 0 0 10px rgba(0,255,255,0.05);
+  transition: transform 0.2s ease;
+}
+
+.job-card:hover {
+  transform: scale(1.02);
+}
+
+.job-card h3 {
+  color: #00f2ff;
+}
+
+.job-card p {
+  margin-top: 10px;
+}
+label {
+  display: block;
+  margin-bottom: 6px;
+  font-weight: bold;
+  color: #ccc;
+}
+
+.job-textarea {
+  resize: vertical;
+  min-height: 120px;
+  padding: 12px;
+  border: 1px solid #ccc;
+  border-radius: 8px;
+  font-family: inherit;
+  font-size: 15px;
+  transition: border-color 0.2s ease;
+}
+
+.job-textarea:focus {
+  outline: none;
+  border-color: #00f2ff;
+  box-shadow: 0 0 5px rgba(0, 196, 255, 0.4);
+}
+form label {
+  margin-top: 20px;
+  margin-bottom: 8px;
+  display: block;
+  font-weight: bold;
+  color: #ccc;
+}
+.cool-input,
+.cool-textarea {
+  width: 100%;
+  background: rgba(255, 255, 255, 0.05);
+  border: 2px solid rgba(0, 242, 255, 0.3);
+  border-radius: 12px;
+  padding: 12px 16px;
+  color: #fff;
+  font-size: 16px;
+  backdrop-filter: blur(8px);
+  transition: border 0.3s ease, box-shadow 0.3s ease;
+}
+
+.cool-input::placeholder,
+.cool-textarea::placeholder {
+  color: #aaa;
+}
+
+.cool-input:focus,
+.cool-textarea:focus {
+  outline: none;
+  border-color: #00f2ff;
+  box-shadow: 0 0 8px rgba(0, 242, 255, 0.4);
+  background: rgba(255, 255, 255, 0.08);
+}
