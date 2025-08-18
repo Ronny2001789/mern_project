@@ -18,6 +18,7 @@ export default function RegisterPage() {
     try {
       const res = await register({ variables: form });
       alert(res.data.register);
+      alert("register successfully")
     } catch (err) {
       console.error(err.message);
     }
